@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="./accset/css/styles.css">
+    <link rel="stylesheet" href="./accset/font/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+        <div id="contain">
+            <div id="mid">
+                <div class="middle">
+                    <p>Logo</p>
+                </div>
+            </div>
+
+            <div id="head">
+                <p>
+                    <button class="btn js-btn1">menu
+    
+                    </button>
+                </p>
+                <p>
+                    <button class="btn js-btn2">contact
+    
+                    </button>
+                </p>
+            </div>
+    
+            <div id="footer">
+                <div class="about">
+                    <p class="date ">monday - friday 10-23 | saturday 14-02
+                        
+                    </p>
+    
+                    <p class="address">42 village St, New York
+    
+                    </p>
+    
+                    <p class="no-copy">powered by <a href="https://www.w3schools.com/"> w3.css</a></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="modal-menu js-modal-menu">
+            <div class="modal-container">
+                <div class="modal-close js-modal-close1">
+                    <i class="ti-close"></i>
+                </div>
+                <div class="modal-header col">
+                    <div class="row10">Starters</div>
+                </div>
+
+                <div class="modal-content col row10">
+                    <div>Tomato Soup <b>$2.50</b></div>
+                </div>
+
+                <div class="modal-content col row10">
+                    <div>Chicken Salad <b>$3.50</b></div>
+                </div>
+
+                <div class="modal-content col row10">
+                    <div>Bread and Butter <b>$1.00</b></div>
+                </div>
+
+                <div class="modal-header col10">
+                    <div class="row10">Main Courses</div>
+                </div>
+
+                <div class="modal-content col row10">
+                    <div>Grilled Fish and Potatoes <b>$8.50</b></div>
+                </div>
+
+                <div class="modal-content col row10">
+                    <div>Italian Pizza <b>$5.50</b></div>
+                </div>
+
+                <div class="modal-content col row10">
+                    <div>Veggie Pasta <b>$4.00</b></div>
+                </div>
+
+                <div class="modal-content col row10">
+                    <div>Chicken and Potatoes <b>$6.50</b></div>
+                </div>
+
+                <div class="modal-content col row10">
+                    <div>Deluxe Burger <b>$5.00</b></div>
+                </div>
+
+                <div class="modal-header col">
+                    <div class="row10">Desserts</div>
+                </div>
+
+                <div class="modal-content col row10">
+                    <div>Fruit Salad <b>$2.50</b></div>
+                </div>
+
+                <div class="modal-content col row10">
+                    <div>Ice cream <b>$2.00</b></div>
+                </div>
+
+                <div class="modal-content col row10">
+                    <div>Chocolate Cake <b>$4.00</b></div>
+                </div>
+
+                <div class="modal-content col row10">
+                    <div>Cheese <b>$5.50</b></div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="modal-contact js-modal-contact">
+            <div class="modal-contact-container">
+                <div class="modal-close js-modal-close2">
+                    <i class="ti-close"></i>
+                </div>
+    
+                <div class="modal-header col">
+                    <div class="row10">Contact</div>
+                </div>
+    
+                <p class="col row15">Reserve a table, ask for today's special or just send us a message:</p>
+                <form action="">
+                    <p class="col row15">
+                        <input type="text" placeholder="Name" required class="form-input">
+                    </p>
+
+                    <p class="col row15">
+                        <input type="number" placeholder="How many people" required class="form-input">
+                    </p>
+
+                    <p class="col row15">
+                        <input type="datetime-local" placeholder="Date and time" required="" name="date" value="2020-11-16T20:00" class="form-input">
+                    </p>
+
+                    <p class="col row15">
+                        <input type="text" placeholder="Message \ Special requirements" required class="form-input">
+                    </p>
+
+                    <p class="col row15">
+                        <button class="btn sub" type="submit">SEND MESSAGE</button>
+                    </p>
+
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+</body>
+
+<script>
+    const Btn1 = document.querySelector('.js-btn1')
+    const Btn2 = document.querySelector('.js-btn2')
+    const modalMenu = document.querySelector('.js-modal-menu')
+    const modalContact = document.querySelector('.js-modal-contact')
+    const modalClose1 = document.querySelector('.js-modal-close1')
+    const modalClose2 = document.querySelector('.js-modal-close2')
+
+    
+    
+function showMenu () {
+    modalMenu.classList.add('open')
+}
+
+function showContact () {
+    modalContact.classList.add('open')
+}
+function hideMenu () {
+    modalMenu.classList.remove('open')
+}
+function hideContact () {
+    modalContact.classList.remove('open')
+}
+Btn1.addEventListener('click',showMenu)
+Btn2.addEventListener('click',showContact)
+
+modalClose2.addEventListener('click',hideContact)
+modalClose1.addEventListener('click',hideMenu)
+
+
+
+</script>
+</html>
